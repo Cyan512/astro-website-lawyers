@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    --color-theme: #981e25;
+    --color-primary: #1ca8cb;
+    --color-title: #113d48;
+    --color-body: #6e7070;
+    --color-smoke: #e9f6f9;
+    --color-smoke2: #f3f4f6;
+    --color-black: #000000;
+    --color-black2: #0d0d0c;
+    --color-gray: #e1e4e5;
+    --color-white: #ffffff;
+    --color-light: #e1e4e5;
+    --color-yellow: #ffb539;
+    --color-success: #28a745;
+    --color-error: #dc3545;
+    --color-th-border: #e9edf5;
+
+    --font-sans: 'Source Sans 3', sans-serif;
+    --font-title: 'Frank Ruhl Libre', serif;
+
+    --spacing-content: 75rem;
+}
