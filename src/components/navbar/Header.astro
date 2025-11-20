@@ -1,0 +1,82 @@
+---
+import Container from '@/components/Container.astro';
+import Link from '@/components/ui/Link.astro';
+import DropDown from './DropDown.astro';
+import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
+
+const menuitems = [
+    { title: 'Home', path: '/' },
+    { title: 'About Us', path: '/about' },
+    { title: 'Staff', path: '/staff' },
+    {
+        title: 'Services',
+        path: '#',
+        children: [
+            { title: 'Action', path: '/' },
+            { title: 'Another action', path: '#' },
+            { title: 'Dropdown Submenu', path: '#' },
+            { title: '404 Page', path: '/404' },
+        ],
+    },
+    { title: 'Results', path: '/results' },
+    { title: 'Contact', path: '/contact' },
+];
+---
+
+<header>
+    <div class="border-gray-200 lg:border-b">
+        <Container>
+            <div class="flex items-center justify-between">
+                <a href="/" class="py-2">
+                    <img
+                        src="/logo-website.png"
+                        alt="logo de Muña & Cardenas Abogados"
+                        class="h-14 w-auto"
+                    />
+                </a>
+                <div class="hidden items-center gap-4 lg:flex">
+                    For FREE Consultation
+                    <Link href="#" size="md">Call: +1 123 456 7890</Link>
+                </div>
+                <div class="block lg:hidden">
+                    <MenuIcon class="h-6 w-6 text-gray-800" />
+                </div>
+            </div>
+        </Container>
+    </div>
+
+    <Container>
+        <div class="mt-4 w-full">
+            <Astronav>
+                <MenuItems class="hidden w-full justify-end lg:flex">
+                    <ul class="flex flex-col lg:flex-row lg:gap-3">
+                        {
+                            menuitems.map((item, index) => (
+                                <>
+                                    {item.children ? (
+                                        <DropDown
+                                            title={item.title}
+                                            children={item.children}
+                                            lastItem={
+                                                index === menuitems.length - 1
+                                            }
+                                        />
+                                    ) : (
+                                        <li>
+                                            <a
+                                                href={item.path}
+                                                class="flex items-center py-2 text-gray-600 uppercase hover:text-gray-900 lg:px-3"
+                                            >
+                                                {item.title}
+                                            </a>
+                                        </li>
+                                    )}
+                                </>
+                            ))
+                        }
+                    </ul>
+                </MenuItems>
+            </Astronav>
+        </div>
+    </Container>
+</header>

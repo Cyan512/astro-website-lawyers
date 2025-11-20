@@ -1,0 +1,66 @@
+---
+const features = [
+    {
+        title: 'Car Accidents',
+        description:
+            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
+        url: '#',
+    },
+    {
+        title: 'Truck Accidents',
+        description:
+            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
+        url: '#',
+    },
+    {
+        title: 'Personal Injury',
+        description:
+            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
+        url: '#',
+    },
+    {
+        title: 'Defective Products',
+        description:
+            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
+        url: '#',
+    },
+    {
+        title: 'Workers Compensation',
+        description:
+            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
+        url: '#',
+    },
+    {
+        title: 'Dog Bites',
+        description:
+            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
+        url: '#',
+    },
+];
+---
+
+<div class="mt-16 md:mt-0">
+    <h2 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">
+        Our Areas of Practice
+    </h2>
+    <p class="mt-4 text-lg text-slate-600">
+        In pellentesque ipsum, in arcu, sed amet augue ultricies pellentesque
+        netus eu sed pharetra accumsan habitant egestas purus, at fermentum.
+    </p>
+</div>
+
+<div class="mt-16 grid gap-16 sm:grid-cols-2 md:grid-cols-3">
+    {
+        features.map((item) => (
+            <div class="flex items-start gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold">{item.title}</h3>{' '}
+                    <p class="mt-2 leading-relaxed text-slate-500">
+                        {item.description}
+                    </p>
+                    <a href={item.url}>Learn More</a>
+                </div>
+            </div>
+        ))
+    }
+</div>

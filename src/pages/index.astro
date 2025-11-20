@@ -1,63 +1,81 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Container from '@/components/Container.astro';
+import Link from '@/components/ui/Link.astro';
+import Features from '@/components/Features.astro';
 ---
 
 <Layout title="home">
     <section>
-        <div></div>
-        <div>
+        <Container
+            class="grid place-items-center pt-16 pb-8 md:pt-12 md:pb-24 lg:grid-cols-2"
+        >
+            <div class="hidden py-6 md:order-1 md:block"></div>
             <div>
-                <div>
-                    <span
-                        >Recuperaciones brutas de más de 2.000 millones de
-                        dólares desde 1982</span
+                <span
+                    class="text-xs font-semibold tracking-widest text-slate-500 uppercase"
+                    >Recuperaciones brutas de más de 2.000 millones de dólares
+                    desde 1982</span
+                >
+                <h1
+                    class="text-5xl font-bold lg:text-6xl lg:tracking-tight xl:text-7xl xl:tracking-tighter"
+                >
+                    Abogados de lesiones personales y accidentes en Nevada
+                </h1>
+                <p class="mt-4 max-w-xl text-lg text-slate-600">
+                    Mattis gata preñada ante la urna imperdiet pellentesque
+                    laoreet lectus viverra consequat dictum enim hasta ahora
+                    pulvinar.
+                </p>
+                <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <Link
+                        href="#"
+                        target="_blank"
+                        class="flex items-center justify-center gap-1"
+                        rel="noopener"
                     >
-                    <h1>
-                        Abogados de lesiones personales y accidentes en Nevada
-                    </h1>
-                    <p>
-                        Mattis gata preñada ante la urna imperdiet pellentesque
-                        laoreet lectus viverra consequat dictum enim hasta ahora
-                        pulvinar.
-                    </p>
-                    <div>
-                        <a>Obtén ayuda ahora</a>
-                    </div>
+                        Obtén ayuda ahora
+                    </Link>
                 </div>
-                <div></div>
             </div>
-        </div>
+        </Container>
     </section>
     <main>
         <section>
-            <div>
-                <h2>Encima</h2>
-                <p>$2.000.000.000</p>
+            <Container class="text-center">
+                <h2 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">
+                    Encima
+                </h2>
+                <p class="text-lg text-slate-600">$2.000.000.000</p>
                 <h3>Cubierto. Luchado con esfuerzo. Ganado con esfuerzo.</h3>
-                <p>
+                <p class="mt-4 text-lg text-slate-600">
                     Pero el diámetro del valle es un elemento y un suave algún
                     mañana aliquet mecenas tincidunt id habitante ahora risa
                     venenatis mattis risa mi hasta querer mauris que es.
                 </p>
-            </div>
+            </Container>
         </section>
         <section>
-            <div>
-                <div>
+            <Container
+                class="grid place-items-center pt-16 pb-8 md:pt-12 md:pb-24 lg:grid-cols-2"
+            >
+                <div class="">
                     <figure>
-                        <img />
+                        <img src="" alt=""/>
                     </figure>
                 </div>
                 <div>
-                    <span>Sobre nosotros</span>
-                    <h2>
+                    <span
+                        class="text-xs font-semibold tracking-widest text-slate-500 uppercase"
+                        >Sobre nosotros</span
+                    >
+                    <h2
+                        class="text-4xl font-bold lg:text-5xl lg:tracking-tight"
+                    >
                         Abogados invictos en lesiones personales y accidentes en
                         Nevada
                     </h2>
-                    <p>
+                    <p class="mt-4 text-lg text-slate-600">
                         <b
                             >En un número entero como urna, augue pretium
                             gravida diam, placerat aliquam neque pellentesque
@@ -70,130 +88,87 @@ import Layout from '../layouts/Layout.astro';
                         magna turpis ut tempus, volutpat sed malesuada ut porttitor
                         morbi enim amet erat purus in varius eu mauris, dui sentarse.
                     </p>
-                    <a>Leer Más</a>
+                    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                        <Link
+                            href="#"
+                            target="_blank"
+                            class="inline-flex items-center justify-center gap-1"
+                            rel="noopener"
+                        >
+                            Leer Más
+                        </Link>
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
         <section>
-            <div>
-                <h2>
-                    ¿Por qué elegir a Mike & John, abogados especializados en
-                    lesiones personales y accidentes?
+            <Container>
+                <h2
+                    class="text-center text-4xl font-bold lg:text-5xl lg:tracking-tight"
+                >
+                    ¿Por qué elegir a Mike & John,<br /> abogados especializados
+                    en lesiones personales y accidentes?
                 </h2>
-                <div>
-                    <div>
+                <div class="mt-16 grid gap-16 sm:grid-cols-2">
+                    <div class="flex flex-col items-start gap-4">
                         <div></div>
-                        <h3>Sin cargo a menos que ganes</h3>
-                        <p>
+                        <h3 class="text-lg font-semibold">
+                            Sin cargo a menos que ganes
+                        </h3>
+                        <p class="mt-2 leading-relaxed text-slate-500">
                             Amet, pellentesque laoreet volutpat feugiat turpis
                             accumsan nulla morbi ut blandit nibh famas arcu,
                             nisi mauris, a eget massa adipiscing.
                         </p>
                     </div>
-                    <div>
+                    <div class="flex flex-col items-start gap-4">
                         <div></div>
-                        <h3>Recuperaciones multimillonarias</h3>
-                        <p>
+                        <h3 class="text-lg font-semibold">
+                            Recuperaciones multimillonarias
+                        </h3>
+                        <p class="mt-2 leading-relaxed text-slate-500">
                             Mi almohada está vacía, no necesito fingir una
                             sonrisa, siempre llevo un elemento hermoso en mi
                             corazón.
                         </p>
                     </div>
-                    <div>
+                    <div class="flex flex-col items-start gap-4">
                         <div></div>
-                        <h3>Miles de clientes satisfechos</h3>
-                        <p>
+                        <h3 class="text-lg font-semibold">
+                            Miles de clientes satisfechos
+                        </h3>
+                        <p class="mt-2 leading-relaxed text-slate-500">
                             Los niños los tiñen, pero se dice que mi almohada es
                             amante del phasellus hasta que el autor se anima,
                             pero cada vida es una proin y no.
                         </p>
                     </div>
-                    <div>
+                    <div class="flex flex-col items-start gap-4">
                         <div></div>
-                        <h3>Somos invictos</h3>
-                        <p>
+                        <h3 class="text-lg font-semibold">Somos invictos</h3>
+                        <p class="mt-2 leading-relaxed text-slate-500">
                             La vida se corta antes de que el hambre del ratón
                             del valle sea triste, el gran lobortis para el
                             pellentesco.
                         </p>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
         <section>
-            <div>
+            <Container class="text-center">
                 <span
+                    class="text-xs font-semibold tracking-widest text-slate-500 uppercase"
                     >Mike & John, abogados especializados en lesiones
                     personales, reconocidos por</span
                 >
                 <div></div>
-            </div>
+            </Container>
         </section>
         <section>
-            <div>
-                <h2>Nuestras áreas de práctica</h2>
-                <p>
-                    En el niño mismo, en el arco, pero amet augue ultricies
-                    pellentesque netus eu pero carcaj accumsan habitante pobreza
-                    pura, en fermentum.
-                </p>
-                <div>
-                    <div>
-                        <h3>Accidentes de coche</h3>
-                        <p>
-                            Se están muriendo, ningún elemento de quién colocó a
-                            los orcos, la urna en el resultado del plátano ahora
-                            es.
-                        </p>
-                        <a>Más Información</a>
-                    </div>
-                    <div>
-                        <h3>Accidentes de camiones</h3>
-                        <p>
-                            Se están muriendo, ningún elemento de quién colocó a
-                            los orcos, la urna en el resultado del plátano ahora
-                            es.
-                        </p>
-                        <a>Más Información</a>
-                    </div>
-                    <div>
-                        <h3>Lesiones personales</h3>
-                        <p>
-                            Se están muriendo, ningún elemento de quién colocó a
-                            los orcos, la urna en el resultado del plátano ahora
-                            es.
-                        </p>
-                        <a>Más Información</a>
-                    </div>
-                    <div>
-                        <h3>Productos defectuosos</h3>
-                        <p>
-                            Se están muriendo, ningún elemento de quién colocó a
-                            los orcos, la urna en el resultado del plátano ahora
-                            es.
-                        </p>
-                        <a>Más Información</a>
-                    </div>
-                    <div>
-                        <h3>Indemnización laboral</h3>
-                        <p>
-                            Se están muriendo, ningún elemento de quién colocó a
-                            los orcos, la urna en el resultado del plátano ahora
-                            es.
-                        </p>
-                        <a>Más Información</a>
-                    </div>
-                    <div>
-                        <h3>Mordeduras de perro</h3>
-                        <p>
-                            Se están muriendo, ningún elemento de quién colocó a
-                            los orcos, la urna en el resultado del plátano ahora
-                            es.
-                        </p>
-                        <a>Más Información</a>
-                    </div>
-                </div>
-            </div>
+            <Container>
+                <Features />
+            </Container>
         </section>
     </main>
 </Layout>
