@@ -6,17 +6,19 @@ import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
 
 const menuitems = [
     { title: 'Home', path: '/' },
-    { title: 'About Us', path: '/about' },
+    {
+        title: 'About Us',
+        path: '/about',
+        children: [
+            { title: 'Misión', path: '/' },
+            { title: 'Valores', path: '#' },
+        ],
+    },
+
     { title: 'Staff', path: '/staff' },
     {
         title: 'Services',
         path: '#',
-        children: [
-            { title: 'Action', path: '/' },
-            { title: 'Another action', path: '#' },
-            { title: 'Dropdown Submenu', path: '#' },
-            { title: '404 Page', path: '/404' },
-        ],
     },
     { title: 'Results', path: '/results' },
     { title: 'Contact', path: '/contact' },
