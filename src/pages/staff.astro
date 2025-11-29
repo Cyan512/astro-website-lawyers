@@ -6,26 +6,25 @@ const team = [
     {
         name: 'Dr. Muña',
         role: 'Socio Fundador',
-        image: 'https://placehold.co/400x500',
+        image: 'http://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00660-foto-nm-scaled.jpg',
         bio: 'Especialista en derecho penal con más de 10 años de experiencia manejando casos complejos y mediáticos. Comprometido con la defensa agresiva de los derechos de sus clientes.',
     },
     {
         name: 'Dr. Cardenas',
         role: 'Socio Fundador',
-        image: 'https://placehold.co/400x500',
+        image: 'http://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00735-stefany-foto-scaled.jpg',
         bio: 'Experto en litigación estratégica y resolución de conflictos. Su enfoque se centra en brindar un servicio legal excepcional y resultados favorables en los tribunales.',
     },
     {
         name: 'Abg. Asociado',
         role: 'Abogado Senior',
-        image: 'https://placehold.co/400x500',
+        image: 'http://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00612-loba-ok-scaled.jpg',
         bio: 'Parte fundamental del equipo, aportando análisis jurídico detallado y soporte en la preparación de casos de alta complejidad.',
     },
 ];
 ---
 
 <Layout title="Staff - Muña & Cardenas">
-    <!-- Encabezado Principal (Estilo Imagen 1) -->
     <div class="bg-black py-20 text-center text-white">
         <Container>
             <h1 class="font-title text-5xl font-bold lg:text-6xl">
@@ -34,12 +33,14 @@ const team = [
         </Container>
     </div>
 
-    <!-- Sección Descriptiva (Estilo Imagen 2) -->
     <Container>
         <div class="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
             <div>
-                <h2 class="font-title text-3xl font-bold leading-tight text-slate-900 lg:text-4xl">
-                    Tenemos a los mejores abogados especializados en derecho penal
+                <h2
+                    class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
+                >
+                    Tenemos a los mejores abogados especializados en derecho
+                    penal
                 </h2>
             </div>
             <div class="flex items-center">
@@ -52,7 +53,6 @@ const team = [
         </div>
     </Container>
 
-    <!-- Grid de Abogados (Estilo Imagen 3 - Más ancho) -->
     <Container class="!max-w-7xl">
         <div class="mx-auto mb-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {
@@ -72,7 +72,7 @@ const team = [
                             <p class="mt-1 text-lg font-medium text-[var(--color-theme)]">
                                 {member.role}
                             </p>
-                            <p class="mt-4 text-slate-600 leading-relaxed">
+                            <p class="mt-4 leading-relaxed text-slate-600">
                                 {member.bio}
                             </p>
                         </div>
@@ -96,7 +96,6 @@ const team = [
         </div>
     </Container>
 
-    <!-- CTA Section -->
     <div class="bg-black py-16">
         <Container>
             <div
@@ -117,7 +116,6 @@ const team = [
         </Container>
     </div>
 
-    <!-- Testimonial Section -->
     <div class="bg-slate-50 py-24">
         <Container>
             <div class="text-center">
@@ -126,12 +124,11 @@ const team = [
                 </h2>
 
                 <div class="relative mx-auto mt-12 max-w-4xl">
-                    <!-- Video Placeholder -->
                     <div
                         class="group relative aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-200"
                     >
                         <img
-                            src="https://placehold.co/1200x675"
+                            src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1200&h=675"
                             alt="Video thumbnail"
                             class="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
                         />
@@ -164,7 +161,7 @@ const team = [
                     >
                         <div class="flex gap-6">
                             <img
-                                src="https://placehold.co/100x100"
+                                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&h=100"
                                 alt="Lisa Emily"
                                 class="h-20 w-20 rounded-full object-cover"
                             />
@@ -201,13 +198,12 @@ const team = [
         </Container>
     </div>
 
-    <!-- Contact Form Section -->
     <div class="bg-[#f3f4f6] py-24">
         <Container>
             <div class="grid items-start gap-16 lg:grid-cols-2">
                 <div>
                     <h2
-                        class="font-title text-4xl font-bold leading-tight lg:text-5xl"
+                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
                     >
                         ¿Listo para obtener respuestas de un abogado calificado?
                     </h2>
@@ -223,7 +219,7 @@ const team = [
                         >
                             Consulta GRATUITA
                         </p>
-                        <p class="mt-2 font-title text-4xl font-bold">
+                        <p class="font-title mt-2 text-4xl font-bold">
                             Llama al: +51 964 047 119
                         </p>
                     </div>
