@@ -1,0 +1,22 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    class?: string;
+    fallbackSrc?: string;
+}
+
+const {
+    src,
+    alt,
+    class: className,
+    fallbackSrc = '/image-placeholder.svg',
+} = Astro.props;
+---
+
+<img
+    src={src}
+    alt={alt}
+    class={className}
+    onerror={`this.onerror=null; this.src='${fallbackSrc}';`}
+/>
