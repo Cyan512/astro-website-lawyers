@@ -1,8 +1,250 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Container from '@/components/Container.astro';
+import UserProfile from '@/components/UserProfile.astro';
+import SmartImage from '@/components/SmartImage.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const team = [
+    {
+        name: 'Dr. Muña',
+        role: 'Socio Fundador',
+        image: 'http://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00660-foto-nm-scaled.jpg',
+        bio: 'Especialista en derecho penal con más de 10 años de experiencia manejando casos complejos y mediáticos. Comprometido con la defensa agresiva de los derechos de sus clientes.',
+    },
+    {
+        name: 'Dr. Cardenas',
+        role: 'Socio Fundador',
+        image: 'http://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00735-stefany-foto-scaled.jpg',
+        bio: 'Experto en litigación estratégica y resolución de conflictos. Su enfoque se centra en brindar un servicio legal excepcional y resultados favorables en los tribunales.',
+    },
+    {
+        name: 'Abg. Asociado',
+        role: 'Abogado Senior',
+        image: 'http://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00612-loba-ok-scaled.jpg',
+        bio: 'Parte fundamental del equipo, aportando análisis jurídico detallado y soporte en la preparación de casos de alta complejidad.',
+    },
+];
 ---
 
-<Layout title="staff" />
+<Layout title="Staff - Muña & Cardenas">
+    <div class="bg-black py-20 text-center text-white">
+        <Container>
+            <h1 class="font-title text-5xl font-bold lg:text-6xl">
+                Nuestros abogados
+            </h1>
+        </Container>
+    </div>
+
+    <Container>
+        <div class="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
+            <div>
+                <h2
+                    class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
+                >
+                    Tenemos a los mejores abogados especializados en derecho
+                    penal
+                </h2>
+            </div>
+            <div class="flex items-center">
+                <p class="text-lg text-slate-600">
+                    Nuestros estudio cuenta con mas de diez años de experiencia
+                    en procesos penales de alta complejidad, llevando casos de
+                    lavado de activos, delitos contra la administración pública.
+                </p>
+            </div>
+        </div>
+    </Container>
+
+    <Container class="!max-w-7xl">
+        <div class="mx-auto mb-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {
+                team.map((member) => (
+                    <UserProfile
+                        name={member.name}
+                        role={member.role}
+                        image={member.image}
+                        bio={member.bio}
+                    />
+                ))
+            }
+        </div>
+    </Container>
+
+    <Container>
+        <div class="mb-20 text-center">
+            <h2 class="font-title text-3xl font-bold lg:text-4xl">
+                Trabajo en Equipo
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-lg text-slate-600">
+                Verás un trabajo en equipo desde el inicio de tu proceso,
+                contando con dos y hasta tres abogados dependiendo de la
+                complejidad de tu caso. Creemos que todo proceso se puede ganar
+                con tiempo, esfuerzo y mucha pasión.
+            </p>
+        </div>
+    </Container>
+
+    <div class="bg-black py-16">
+        <Container>
+            <div
+                class="flex flex-col items-center justify-between gap-6 md:flex-row"
+            >
+                <h2
+                    class="font-title text-3xl font-bold text-white lg:text-4xl"
+                >
+                    Obtenga ayuda de nuestros mejores abogados
+                </h2>
+                <a
+                    href="/contact"
+                    class="bg-[var(--color-theme)] px-8 py-4 text-sm font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
+                >
+                    Agendar Cita Ahora
+                </a>
+            </div>
+        </Container>
+    </div>
+
+    <div class="bg-slate-50 py-24">
+        <Container>
+            <div class="text-center">
+                <h2 class="font-title text-3xl font-bold lg:text-4xl">
+                    Escuche la historia de nuestro cliente
+                </h2>
+
+                <div class="relative mx-auto mt-12 max-w-4xl">
+                    <div
+                        class="group relative aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-200"
+                    >
+                        <SmartImage
+                            src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1200&h=675"
+                            alt="Video thumbnail"
+                            class="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                            fallbackSrc="/video-placeholder.svg"
+                        />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center"
+                        >
+                            <div
+                                class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-white bg-black/30 backdrop-blur-sm transition-transform group-hover:scale-110"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="ml-1 h-10 w-10 text-white"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-10 flex flex-col items-start justify-between gap-8 text-left md:flex-row"
+                    >
+                        <div class="flex gap-6">
+                            <SmartImage
+                                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&h=100"
+                                alt="Lisa Emily"
+                                class="h-20 w-20 rounded-full object-cover"
+                                fallbackSrc="/user-placeholder.svg"
+                            />
+                            <div>
+                                <h3 class="font-title text-xl font-bold">
+                                    Lisa Emily
+                                </h3>
+                                <p class="mt-2 text-slate-600 italic">
+                                    "Gracias a la firma Muña & Cardenas, pude
+                                    recuperar mi tranquilidad. Su equipo trabajó
+                                    incansablemente en mi caso y lograron un
+                                    resultado que superó mis expectativas."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="min-w-max text-right">
+                            <div
+                                class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-theme)] text-white"
+                            >
+                                $
+                            </div>
+                            <div class="font-title text-3xl font-bold">
+                                $120,000,000
+                            </div>
+                            <div
+                                class="text-sm font-medium text-[var(--color-theme)]"
+                            >
+                                Recuperado para Lisa
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Container>
+    </div>
+
+    <div class="bg-[#f3f4f6] py-24">
+        <Container>
+            <div class="grid items-start gap-16 lg:grid-cols-2">
+                <div>
+                    <h2
+                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
+                    >
+                        ¿Listo para obtener respuestas de un abogado calificado?
+                    </h2>
+                    <p class="mt-6 text-lg text-slate-600">
+                        Si usted o un ser querido necesita asesoría legal, no
+                        dude en contactarnos. Estamos aquí para escuchar su caso
+                        y brindarle la mejor estrategia legal.
+                    </p>
+
+                    <div class="mt-12">
+                        <p
+                            class="text-sm font-bold tracking-wide text-slate-900 uppercase"
+                        >
+                            Consulta GRATUITA
+                        </p>
+                        <p class="font-title mt-2 text-4xl font-bold">
+                            Llama al: +51 964 047 119
+                        </p>
+                    </div>
+                </div>
+
+                <form class="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Tu Nombre"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Correo Electrónico"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Número de Teléfono"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <textarea
+                        rows="4"
+                        placeholder="Describe tu Caso"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="bg-[var(--color-theme)] px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
+                    >
+                        Obtener Ayuda Ahora
+                    </button>
+                </form>
+            </div>
+        </Container>
+    </div>
+</Layout>
