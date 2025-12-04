@@ -1,0 +1,89 @@
+---
+import Container from './Container.astro';
+
+interface Props {
+    formTitle?: string;
+    formSubtitle?: string;
+}
+
+const { formTitle, formSubtitle } = Astro.props;
+---
+
+<div class="bg-[#f3f4f6] py-24">
+    <Container>
+        <div class="grid items-start gap-16 lg:grid-cols-2">
+            <div>
+                <slot name="info">
+                    <h2
+                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
+                    >
+                        ¿Listo para obtener respuestas de un abogado calificado?
+                    </h2>
+                    <p class="mt-6 text-lg text-slate-600">
+                        Si usted o un ser querido necesita asesoría legal, no
+                        dude en contactarnos. Estamos aquí para escuchar su caso
+                        y brindarle la mejor estrategia legal.
+                    </p>
+
+                    <div class="mt-12">
+                        <p
+                            class="text-sm font-bold tracking-wide text-slate-900 uppercase"
+                        >
+                            Consulta GRATUITA
+                        </p>
+                        <p class="font-title mt-2 text-4xl font-bold">
+                            Llama al: +51 964 047 119
+                        </p>
+                    </div>
+                </slot>
+            </div>
+
+            <div>
+                {
+                    formTitle && (
+                        <div class="mb-8">
+                            <h2 class="font-title text-3xl font-bold text-slate-900">
+                                {formTitle}
+                            </h2>
+                            {formSubtitle && (
+                                <p class="mt-2 text-lg font-medium text-slate-600">
+                                    {formSubtitle}
+                                </p>
+                            )}
+                        </div>
+                    )
+                }
+
+                <form class="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Tu Nombre"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Correo Electrónico"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Número de Teléfono"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <textarea
+                        rows="4"
+                        placeholder="Describe tu Caso"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="bg-[var(--color-theme)] px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
+                    >
+                        Obtener Ayuda Ahora
+                    </button>
+                </form>
+            </div>
+        </div>
+    </Container>
+</div>

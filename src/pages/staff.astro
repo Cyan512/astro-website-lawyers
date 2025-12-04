@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Container from '@/components/Container.astro';
 import UserProfile from '@/components/UserProfile.astro';
 import SmartImage from '@/components/SmartImage.astro';
+import ContactSection from '@/components/ContactSection.astro';
 
 const team = [
     {
@@ -188,63 +189,5 @@ const team = [
         </Container>
     </div>
 
-    <div class="bg-[#f3f4f6] py-24">
-        <Container>
-            <div class="grid items-start gap-16 lg:grid-cols-2">
-                <div>
-                    <h2
-                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
-                    >
-                        ¿Listo para obtener respuestas de un abogado calificado?
-                    </h2>
-                    <p class="mt-6 text-lg text-slate-600">
-                        Si usted o un ser querido necesita asesoría legal, no
-                        dude en contactarnos. Estamos aquí para escuchar su caso
-                        y brindarle la mejor estrategia legal.
-                    </p>
-
-                    <div class="mt-12">
-                        <p
-                            class="text-sm font-bold tracking-wide text-slate-900 uppercase"
-                        >
-                            Consulta GRATUITA
-                        </p>
-                        <p class="font-title mt-2 text-4xl font-bold">
-                            Llama al: +51 964 047 119
-                        </p>
-                    </div>
-                </div>
-
-                <form class="space-y-4">
-                    <input
-                        type="text"
-                        placeholder="Tu Nombre"
-                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
-                    />
-                    <input
-                        type="email"
-                        placeholder="Correo Electrónico"
-                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
-                    />
-                    <input
-                        type="tel"
-                        placeholder="Número de Teléfono"
-                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
-                    />
-                    <textarea
-                        rows="4"
-                        placeholder="Describe tu Caso"
-                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
-                    ></textarea>
-
-                    <button
-                        type="submit"
-                        class="bg-[var(--color-theme)] px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
-                    >
-                        Obtener Ayuda Ahora
-                    </button>
-                </form>
-            </div>
-        </Container>
-    </div>
+    <ContactSection />
 </Layout>
