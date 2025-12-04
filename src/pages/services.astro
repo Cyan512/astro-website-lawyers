@@ -1,126 +1,154 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Container from '@/components/Container.astro';
+import ContactSection from '@/components/ContactSection.astro';
 
 const generalServices = [
-    "Asesoramiento y defensa en casos penales",
-    "Representación en juicios y audiencias",
-    "Recursos y apelaciones",
-    "Investigación y recolección de pruebas",
-    "Negociación y acuerdo con la fiscalía",
-    "Asesoramiento en materia de derechos humanos"
+    'Asesoramiento y defensa en casos penales',
+    'Representación en juicios y audiencias',
+    'Recursos y apelaciones',
+    'Investigación y recolección de pruebas',
+    'Negociación y acuerdo con la fiscalía',
+    'Asesoramiento en materia de derechos humanos',
 ];
 
 const services = [
     {
-        id: "01",
-        title: "Delito de lavado de activos.",
-        description: "Contamos con una amplia experiencia en este delito, actualmente venimos realizando la defensa exitosa de varios casos."
+        id: '01',
+        title: 'Delito de lavado de activos.',
+        description:
+            'Contamos con una amplia experiencia en este delito, actualmente venimos realizando la defensa exitosa de varios casos.',
     },
     {
-        id: "02",
-        title: "Delitos contra la administración publica.",
-        description: "Una gran cantidad de nuestros casos son de esta materia, actualmente venimos defendiendo a diversos funcionarios públicos y empresarios."
+        id: '02',
+        title: 'Delitos contra la administración publica.',
+        description:
+            'Una gran cantidad de nuestros casos son de esta materia, actualmente venimos defendiendo a diversos funcionarios públicos y empresarios.',
     },
     {
-        id: "03",
-        title: "Delitos contra la vida y la integridad física",
-        description: "Estos delitos son de mucha relevancia en nuestra sociedad, siendo muchos de nuestros casos estos delitos."
+        id: '03',
+        title: 'Delitos contra la vida y la integridad física',
+        description:
+            'Estos delitos son de mucha relevancia en nuestra sociedad, siendo muchos de nuestros casos estos delitos.',
     },
     {
-        id: "04",
-        title: "Delitos contra la propiedad y el patrimonio",
-        description: "Estos delitos se han incrementado en nuestra sociedad, en la actualidad nuestro estudio viene trabajando con multiples casos, contado con experiencia en esta area."
+        id: '04',
+        title: 'Delitos contra la propiedad y el patrimonio',
+        description:
+            'Estos delitos se han incrementado en nuestra sociedad, en la actualidad nuestro estudio viene trabajando con multiples casos, contado con experiencia en esta area.',
     },
     {
-        id: "05",
-        title: "Delitos contra la libertad y la seguridad sexual",
-        description: "Este delito es uno de los mas complejos, esto debido a la gran carga emocional, por el que afronta la familia y las personas que estan imersas en estos procesos."
+        id: '05',
+        title: 'Delitos contra la libertad y la seguridad sexual',
+        description:
+            'Este delito es uno de los mas complejos, esto debido a la gran carga emocional, por el que afronta la familia y las personas que estan imersas en estos procesos.',
     },
     {
-        id: "06",
-        title: "Delitos económicos y financieros",
-        description: "Este es un delito que ha venido evolucionando en nuestra sociedad, los delitos de cuello blanco, actualmente nuestra empresas viene llevando multiples casos de este tipo."
+        id: '06',
+        title: 'Delitos económicos y financieros',
+        description:
+            'Este es un delito que ha venido evolucionando en nuestra sociedad, los delitos de cuello blanco, actualmente nuestra empresas viene llevando multiples casos de este tipo.',
     },
     {
-        id: "07",
-        title: "Delitos informáticos y ciberdelitos",
-        description: "Con el desarrollo de la tecnologia, tambien se ha desarrollado este delito, siendo uno de los delitos con suma complejidad."
+        id: '07',
+        title: 'Delitos informáticos y ciberdelitos',
+        description:
+            'Con el desarrollo de la tecnologia, tambien se ha desarrollado este delito, siendo uno de los delitos con suma complejidad.',
     },
     {
-        id: "08",
-        title: "Delitos contra la salud pública",
-        description: "Este es un delito que afecta a toda la sociedad y suele cometerse con frecuencia, nuestro estudio viene litigando en esta area con mucho exito,"
-    }
+        id: '08',
+        title: 'Delitos contra la salud pública',
+        description:
+            'Este es un delito que afecta a toda la sociedad y suele cometerse con frecuencia, nuestro estudio viene litigando en esta area con mucho exito,',
+    },
 ];
 ---
 
 <Layout title="Servicios - Muña & Cardenas">
-    <!-- Hero Section -->
     <div class="bg-black py-20 text-center text-white">
         <Container>
-            <h1 class="font-title text-5xl font-bold lg:text-6xl">
-                Servicios
-            </h1>
+            <h1 class="font-title text-5xl font-bold lg:text-6xl">Servicios</h1>
         </Container>
     </div>
 
-    <!-- Intro Section -->
     <div class="bg-slate-50 py-16 lg:py-24">
         <Container>
-            <div class="grid gap-12 lg:grid-cols-2 items-center">
+            <div class="grid items-center gap-12 lg:grid-cols-2">
                 <div>
-                    <h2 class="font-title text-4xl font-bold text-slate-900 lg:text-5xl">
+                    <h2
+                        class="font-title text-4xl font-bold text-slate-900 lg:text-5xl"
+                    >
                         Nuestro estudio te brinda:
                     </h2>
                 </div>
                 <div>
                     <ul class="space-y-3 text-lg text-slate-600">
-                        {generalServices.map(service => (
-                            <li class="flex items-start">
-                                <span class="mr-2 text-[var(--color-theme)]">–</span>
-                                {service}
-                            </li>
-                        ))}
+                        {
+                            generalServices.map((service) => (
+                                <li class="flex items-start">
+                                    <span class="mr-2 text-[var(--color-theme)]">
+                                        –
+                                    </span>
+                                    {service}
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </div>
         </Container>
     </div>
 
-    <!-- Services Grid Section -->
     <div class="bg-slate-50 pb-24">
         <Container>
             <div class="grid gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
-                {services.map((service) => (
-                    <div class="flex flex-col gap-4">
-                        <span class="text-sm font-bold text-[var(--color-theme)]">
-                            {service.id}.
-                        </span>
-                        <h3 class="font-title text-2xl font-bold text-slate-900">
-                            {service.title}
-                        </h3>
-                        <p class="text-slate-600 leading-relaxed">
-                            {service.description}
-                        </p>
-                    </div>
-                ))}
+                {
+                    services.map((service) => (
+                        <div class="flex flex-col gap-4">
+                            <span class="text-sm font-bold text-[var(--color-theme)]">
+                                {service.id}.
+                            </span>
+                            <h3 class="font-title text-2xl font-bold text-slate-900">
+                                {service.title}
+                            </h3>
+                            <p class="leading-relaxed text-slate-600">
+                                {service.description}
+                            </p>
+                        </div>
+                    ))
+                }
 
-                <!-- CTA Card (Last item in grid) -->
-                <div class="flex flex-col gap-6 justify-center p-6 rounded-lg bg-white/50 border border-slate-100 shadow-sm lg:bg-transparent lg:border-none lg:shadow-none lg:p-0">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-theme)] text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                <div
+                    class="flex flex-col justify-center gap-6 rounded-lg border border-slate-100 bg-white/50 p-6 shadow-sm lg:border-none lg:bg-transparent lg:p-0 lg:shadow-none"
+                >
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-theme)] text-white"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                            ></path>
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-title text-2xl font-bold text-slate-900 mb-2">
+                        <h3
+                            class="font-title mb-2 text-2xl font-bold text-slate-900"
+                        >
                             Comentanos tu caso a:
                         </h3>
                         <p class="font-bold text-[var(--color-theme)]">
                             Nuestro numero: 956-333129
                         </p>
-                        <p class="font-bold text-[var(--color-theme)] mt-1">
+                        <p class="mt-1 font-bold text-[var(--color-theme)]">
                             ¡Tu libertad no tiene precio!
                         </p>
                     </div>
@@ -128,4 +156,6 @@ const services = [
             </div>
         </Container>
     </div>
+
+    <ContactSection />
 </Layout>
