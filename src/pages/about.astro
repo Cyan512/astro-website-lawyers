@@ -1,8 +1,472 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Container from '@/components/Container.astro';
 import Hero from '@/components/Hero.astro';
 ---
 
-<Layout title="About">
-    <Hero title="About Us" />
+<Layout title="About us - Muña & Cardenas">
+    <Hero title="Nosotros" />
+
+    <Container>
+        <div class="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
+            <div>
+                <h2
+                    class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
+                >
+                    Muña & Cardenas (MC)- firma de abogados
+                </h2>
+            </div>
+            <div class="flex flex-col gap-6">
+                <p class="font-bolt text-lg text-slate-600">
+                    Nuestra firma de abogados cuenta con una trayectoria de diez
+                    años especializándonos en derecho penal, manejando con éxito
+                    casos complejos y mediáticos. Durante esta década de
+                    experiencia, hemos defendido a clientes en situaciones
+                    legales delicadas con dedicación, integridad y un enfoque
+                    estratégico.
+                </p>
+                <p class="text-lg text-slate-600">
+                    En nuestra firma, nos enorgullece brindar un servicio legal
+                    excepcional, enfocado en la defensa agresiva de los derechos
+                    de nuestros clientes y la búsqueda de resultados favorables
+                    en los tribunales. Hemos representado a clientes en una
+                    amplia gama de casos penales, incluyendo asuntos de alta
+                    complejidad y gran repercusión mediática, demostrando
+                    nuestra capacidad para enfrentar desafíos legales con
+                    profesionalismo y eficacia.
+                </p>
+            </div>
+        </div>
+    </Container>
+
+    <Container>
+        <div class="grid gap-12 py-20 lg:grid-cols-2">
+            <div class="w-full">
+                <img
+                    src="https://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00668-nmnm-scaled.jpg"
+                    alt="Perfil Nahuel Muña"
+                    class="h-auto w-full rounded-lg object-cover"
+                />
+            </div>
+            <div class="flex flex-col justify-center">
+                <span class="mb-4 text-5xl text-slate-400">“</span>
+                <p class="mb-10 text-lg leading-relaxed text-slate-700">
+                    Hay cosas que el dinero no puede comprar como: tu libertad,
+                    tu tranquilidad y tu paz familiar, creemos que todo proceso
+                    se puede ganar, siempre que uses tiempo, esfuerzo y mucha
+                    pasión. Nuestra finalidad es simplificarte tu vida y por
+                    eso, contamos con los mejores abogados especializados en
+                    derecho penal. Mi nombre es Nahuel Muña, magíster de la
+                    Pontificie Universidad Católica del Perú (PUCP),
+                    especialista en derecho penal y te invito a solucionar tus
+                    problemas legales.
+                </p>
+                <div class="mt-4">
+                    <img
+                        src="https://muñacardenas-abogadopenalista.com/wp-content/uploads/2021/03/signature.png"
+                        alt="Firma Nahuel Muña"
+                        class="mb-2 h-16"
+                    />
+                    <p class="text-lg font-semibold text-slate-700">
+                        Nahuel Muña.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </Container>
+
+    <Container>
+        <h2 class="text-center text-3xl font-bold text-red-700">
+            Muña & Cardenas, es tu mejor elección!…
+        </h2>
+        <div class="grid gap-12 py-20 lg:grid-cols-2">
+            <div>
+                <h2
+                    class="font-title text-4xl leading-tight font-bold text-slate-900 lg:text-5xl"
+                >
+                    Nuestra misión y <br /> valores:
+                </h2>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900">Misión:</h4>
+                    <p class="mt-2 text-base leading-relaxed text-slate-700">
+                        Brindamos el servicio más especializado y organizado en
+                        derecho penal, nuestra misión es lograr el éxito en tu
+                        caso.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-slate-900">Valores:</h4>
+                    <ul class="mt-4 space-y-6 leading-relaxed text-slate-700">
+                        <li>
+                            <span class="font-bold">• Lealtad.</span>
+                            – Nuestro trabajo se basa en la lealtad que se muestra
+                            al estudio y a todos los clientes en la resolución de
+                            sus casos, siendo este valor de mayor importancia por
+                            trabajar con información privilegiada y delicada.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Liderazgo.</span>
+                            – Marcamos tendencia en nuestra disciplina, buscamos
+                            el cambio, la innovación y el liderazgo.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Aprendizaje.</span>
+                            – Estamos en constante capacitación y aprendizaje permanente.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Puntualidad.</span>
+                            – Cumplir con los plazos procesales, entrar a las audiencias
+                            a la hora señalada, además de ingresar a la hora exacta
+                            al trabajo.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Adaptibilidad.</span>
+                            – Nos acomodamos al entorno, como a las diferentes condiciones
+                            y necesidades de nuestros clientes.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Simplicidad.</span>
+                            – Creamos y aplicacmos procesos sencilos. Evitamos o
+                            reducimoostoda forman de complejidad, hacemos que lo
+                            complejo se convierta en sencillo.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Pasión.</span>
+                            – Amamos lo que hacemos, Perseguimos nuestras metas con
+                            determinación y entusiasmo.
+                        </li>
+                        <li>
+                            <span class="font-bold"
+                                >• Comunicación abierta.</span
+                            >
+                            – Existe una comunicación horizontal y vertical, estamos
+                            abiertos a nuevas ideas. Siempre buscamos el feedback
+                            o la retro alimentación para mejorar.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Honestidad.</span>
+                            – Trabajamos con honestidad, mostrando sinceridad e integridad
+                            a nuestros clientes y dentro del equipo de trabajo.
+                        </li>
+                        <li>
+                            <span class="font-bold"
+                                >• innovación y creatividad.</span
+                            >
+                            – Buscamos solucionar los casos con estrategias que contenga
+                            creatividad e innovación.
+                        </li>
+                        <li>
+                            <span class="font-bold">• Trabajo en equipo.</span>
+                            – Todo proceso es evaluado y llevado por un grupo humano
+                            compacto y dinámico.
+                        </li>
+                        <li>
+                            <span class="font-bold">• determinación.</span>
+                            – Estamos determinados a ganar cada caso, no nos rendimos
+                            ante las adversidades.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </Container>
+
+    <Container>
+        <div class="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
+            <div>
+                <h2
+                    class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
+                >
+                    Our History
+                </h2>
+            </div>
+            <div class="flex items-center">
+                <p class="text-lg text-slate-600">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus, quo? Quia minus pariatur porro, repellat dolore et,
+                    quos sequi quidem in modi, iure voluptatem iusto officia
+                    corrupti earum consectetur ad!
+                </p>
+            </div>
+        </div>
+    </Container>
+
+    <Container>
+        <div class="grid gap-10 py-20 md:grid-cols-2 lg:grid-cols-3">
+            <div>
+                <h3 class="text-xl font-bold text-red-700">1982</h3>
+                <p class="mt-2 text-slate-600">
+                    Aliquet tristique sollicitudin malesuada suspendisse
+                    facilisis orci tortor commodo aliquet augue lorem.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">1985</h3>
+                <p class="mt-2 text-slate-600">
+                    Consequat leo risus molestie nibh integer adipiscing
+                    lobortis.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">1987</h3>
+                <p class="mt-2 text-slate-600">
+                    Nibh donec massa duis eget viverra auctor proin tellus odio
+                    cras dolor.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">1990</h3>
+                <p class="mt-2 text-slate-600">
+                    Sapien libero sit sed ut consectetur cursus nullam
+                    vestibulum eget mauris mi.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">1994</h3>
+                <p class="mt-2 text-slate-600">
+                    Ornare tempor, vitae facilisis penatibus dignissim viverra
+                    porttitor ac vel morbi leo facilisis proin eleifend urna.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">1999</h3>
+                <p class="mt-2 text-slate-600">
+                    Pretium sed dui odio aliquam, interdum sit eget massa est
+                    urna morbi platea neque.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">2005</h3>
+                <p class="mt-2 text-slate-600">
+                    Facilisis sed semper nulla vel massa imperdiet leo eu, a in
+                    nam sed elementum in lorem molestie ultrices aliquam eget.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">2012</h3>
+                <p class="mt-2 text-slate-600">
+                    Rhoncus non lectus ipsum morbi fringilla et enim metus
+                    facilisis cras sollicitudin egestas egestas.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-red-700">2018</h3>
+                <p class="mt-2 text-slate-600">
+                    Velit neque orci sagittis laoreet quis tincidunt ornare
+                    semper nibh hendrerit dolor.
+                </p>
+            </div>
+        </div>
+    </Container>
+
+    <Container>
+        <div class="grid gap-10 py-20 lg:grid-cols-2">
+            <div>
+                <h2 class="text-3xl leading-tight font-bold text-slate-900">
+                    Why Choose Mike & John <br />
+                    Personal Injury & Accident <br />
+                    Lawyers?
+                </h2>
+                <p class="mt-6 leading-relaxed text-slate-600">
+                    Eget scelerisque mauris cras sollicitudin tristique
+                    habitasse nibh vivamus quis cursus molestie pulvinar rutrum
+                    ornare adipiscing egestas cras ultrices odio ac viverra
+                    vitae.
+                </p>
+            </div>
+            <div class="space-y-10">
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"
+                    >
+                        <i class="fa-solid fa-scale-balanced text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-900">
+                            No Fee Unless You Win
+                        </h4>
+                        <p class="mt-1 text-slate-600">
+                            Amet, pellentesque laoreet volutpat feugiat turpis
+                            accumsan nulla morbi ut blandit nibh fames arcu.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"
+                    >
+                        <i class="fa-solid fa-sack-dollar text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-900">
+                            Multi Billions in Recoveries
+                        </h4>
+                        <p class="mt-1 text-slate-600">
+                            Pulvinar mi egestas nulla suscipit posuere aliquet
+                            risus tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"
+                    >
+                        <i class="fa-solid fa-users text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-900">
+                            Thousands of Happy Clients
+                        </h4>
+                        <p class="mt-1 text-slate-600">
+                            Tincidunt pellentesque sed pulvinar mi dictum amet
+                            phasellus donec auctor viverra.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"
+                    >
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-900">
+                            We are Undefeated
+                        </h4>
+                        <p class="mt-1 text-slate-600">
+                            Vitae consectetur amet mus fames dui tincidunt
+                            convallis tristique sit accumsan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Container>
+
+    <Container>
+        <div class="py-20">
+            <h2 class="mb-14 text-center text-3xl font-bold text-slate-900">
+                What Our Clients Say
+            </h2>
+            <div class="grid gap-10 lg:grid-cols-3">
+                <div class="text-center">
+                    <i class="fa-solid fa-quote-left text-2xl text-red-700"></i>
+                    <span class="mb-4 text-5xl text-slate-400">“</span>
+                    <p class="mt-6 leading-relaxed text-slate-600">
+                        “At pellentesque faucibus morbi morbi vel magna at
+                        eleifend mauris est nisl purus tellus magna volutpat
+                        elit quis nunc adipiscing mauris odio ornare nunc.”
+                    </p>
+                    <div class="mt-6 flex flex-col items-center">
+                        <img
+                            src="/img/user-1.jpg"
+                            class="h-14 w-14 rounded-full object-cover"
+                        />
+                        <p class="mt-2 font-semibold text-slate-900">
+                            Jammie White
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-quote-left text-2xl text-red-700"></i>
+                    <span class="mb-4 text-5xl text-slate-400">“</span>
+                    <p class="mt-6 leading-relaxed text-slate-600">
+                        “Est elit nulla risus a purus faucibus gravida tempus,
+                        magnis mauris tellus vitae bibendum faucibus id
+                        phasellus rutrum vel non quis pellentesque sem.”
+                    </p>
+                    <div class="mt-6 flex flex-col items-center">
+                        <img
+                            src="/img/user-2.jpg"
+                            class="h-14 w-14 rounded-full object-cover"
+                        />
+                        <p class="mt-2 font-semibold text-slate-900">
+                            Michael Johnson
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-quote-left text-2xl text-red-700"></i>
+                    <span class="mb-4 text-5xl text-slate-400">“</span>
+                    <p class="mt-6 leading-relaxed text-slate-600">
+                        “Elit id pretium, nec sit pretium massa nibh ut cursus
+                        auctor ac social proin justo, et commodo at maecenas
+                        magna.”
+                    </p>
+                    <div class="mt-6 flex flex-col items-center">
+                        <img
+                            src="/img/user-3.jpg"
+                            class="h-14 w-14 rounded-full object-cover"
+                        />
+                        <p class="mt-2 font-semibold text-slate-900">
+                            Julie Kyle
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Container>
+
+    <div class="bg-[#f3f4f6] py-24">
+        <Container>
+            <div class="grid items-start gap-16 lg:grid-cols-2">
+                <div>
+                    <h2
+                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
+                    >
+                        ¿Listo para obtener respuestas de un abogado calificado?
+                    </h2>
+                    <p class="mt-6 text-lg text-slate-600">
+                        Si usted o un ser querido necesita asesoría legal, no
+                        dude en contactarnos. Estamos aquí para escuchar su caso
+                        y brindarle la mejor estrategia legal.
+                    </p>
+
+                    <div class="mt-12">
+                        <p
+                            class="text-sm font-bold tracking-wide text-slate-900 uppercase"
+                        >
+                            Consulta GRATUITA
+                        </p>
+                        <p class="font-title mt-2 text-4xl font-bold">
+                            Llama al: +51 964 047 119
+                        </p>
+                    </div>
+                </div>
+
+                <form class="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Tu Nombre"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Correo Electrónico"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Número de Teléfono"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <textarea
+                        rows="4"
+                        placeholder="Describe tu Caso"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="bg-[var(--color-theme)] px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
+                    >
+                        Obtener Ayuda Ahora
+                    </button>
+                </form>
+            </div>
+        </Container>
+    </div>
 </Layout>
+
