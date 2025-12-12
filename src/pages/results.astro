@@ -1,8 +1,191 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Container from '@/components/Container.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Results" />
+    <div class="bg-black py-20 text-center text-white">
+        <Container>
+            <h1 class="font-title text-5xl font-bold lg:text-6xl">Resultados</h1>
+        </Container>
+    </div>
+
+    <Container>
+        <div class="text-center py-24">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                Over
+            </h3>
+            <h2 class="text-5xl md:text-6xl font-bold text-black mb-6">
+                $2,000,000,000
+            </h2>
+            <p class="text-xl font-semibold text-red-700 mb-8">
+                Covered. Hard fought. Hard earned.
+            </p>
+            <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Sed diam convallis elementum et mollis aliquam cras aliquet maecenas tincidunt id habitant nunc risus venenatis mattis risus mi donec egestas mauris quam sit.
+            </p>
+        </div>
+    </Container>
+
+
+    <Container>
+
+    <div class="text-center py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Some Successful Recoveries
+        </h2>
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 pb-20">
+
+        <div class="bg-white p-8 shadow-sm border border-gray-200">
+            <h3 class="text-2xl font-bold text-red-700">$120,000,000</h3>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">Car Accident</h4>
+            <p class="mt-2 text-slate-600">
+                Feugiat vitae parturient scelerisque cursus nisi mauris, cursus tincidunt mi,
+                turpis enim laoreet venenatis.
+            </p>
+
+            <p class="mt-4 flex items-center gap-2 text-slate-700">
+                <span class="text-green-600 text-lg">✔</span>
+                <strong>Status:</strong> Egestas eleifend euismod
+            </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-sm border border-gray-200">
+            <h3 class="text-2xl font-bold text-red-700">$104,000,000</h3>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">Personal Injury</h4>
+            <p class="mt-2 text-slate-600">
+                Eu sapien sed velit feugiat feugiat vel egestas in id et scelerisque arcu commodo
+                convallis suscipit arcu lobortis ultrices lorem nibh iaculis vel dignissim.
+            </p>
+
+            <p class="mt-4 flex items-center gap-2 text-slate-700">
+                <span class="text-green-600 text-lg">✔</span>
+                <strong>Status:</strong> Egestas eleifend euismod
+            </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-sm border border-gray-200">
+            <h3 class="text-2xl font-bold text-red-700">$80,000,000</h3>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">Dog Bites</h4>
+            <p class="mt-2 text-slate-600">
+                Sed sed rhoncus amet, nulla faucibus cras pellentesque cursus pretium non nunc pretium pellentesque nullam.
+            </p>
+
+            <p class="mt-4 flex items-center gap-2 text-slate-700">
+                <span class="text-green-600 text-lg">✔</span>
+                <strong>Status:</strong> Egestas eleifend euismod
+            </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-sm border border-gray-200">
+            <h3 class="text-2xl font-bold text-red-700">$112,000,000</h3>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">Worker Compensation</h4>
+            <p class="mt-2 text-slate-600">
+                Fusce consequat gravida at feugiat velit venenatis tempor, ipsum cursus augue venenatis pellentesque diam volutpat,
+                cras blandit feugiat purus massa proin et, mauris nec.
+            </p>
+
+            <p class="mt-4 flex items-center gap-2 text-slate-700">
+                <span class="text-green-600 text-lg">✔</span>
+                <strong>Status:</strong> Egestas eleifend euismod
+            </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-sm border border-gray-200">
+            <h3 class="text-2xl font-bold text-red-700">$96,000,000</h3>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">Truck Accident</h4>
+            <p class="mt-2 text-slate-600">
+                Aliquam morbi in risus tortor tristique sed tellus sollicitudin at non cursus at mauris id rhoncus metus,
+                feugiat id ultricies orci odio cursus ac.
+            </p>
+
+            <p class="mt-4 flex items-center gap-2 text-slate-700">
+                <span class="text-green-600 text-lg">✔</span>
+                <strong>Status:</strong> Egestas eleifend euismod
+            </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-sm border border-gray-200">
+            <h3 class="text-2xl font-bold text-red-700">$128,000,000</h3>
+            <h4 class="mt-4 text-lg font-semibold text-slate-900">Wrongful Death</h4>
+            <p class="mt-2 text-slate-600">
+                Tellus purus neque phasellus aliquet fringilla metus tincidunt scelerisque rhoncus,
+                a posuere diam sit pretium in scelerisque suspendisse nunc sed vestibulum amet et tortor iaculis.
+            </p>
+
+            <p class="mt-4 flex items-center gap-2 text-slate-700">
+                <span class="text-green-600 text-lg">✔</span>
+                <strong>Status:</strong> Egestas eleifend euismod
+            </p>
+        </div>
+
+    </div>
+
+    </Container>
+
+
+    <div class="bg-[#f3f4f6] py-24">
+        <Container>
+            <div class="grid items-start gap-16 lg:grid-cols-2">
+                <div>
+                    <h2
+                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
+                    >
+                        ¿Listo para obtener respuestas de un abogado calificado?
+                    </h2>
+                    <p class="mt-6 text-lg text-slate-600">
+                        Si usted o un ser querido necesita asesoría legal, no
+                        dude en contactarnos. Estamos aquí para escuchar su caso
+                        y brindarle la mejor estrategia legal.
+                    </p>
+
+                    <div class="mt-12">
+                        <p
+                            class="text-sm font-bold tracking-wide text-slate-900 uppercase"
+                        >
+                            Consulta GRATUITA
+                        </p>
+                        <p class="font-title mt-2 text-4xl font-bold">
+                            Llama al: +51 964 047 119
+                        </p>
+                    </div>
+                </div>
+
+                <form class="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Tu Nombre"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Correo Electrónico"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Número de Teléfono"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    />
+                    <textarea
+                        rows="4"
+                        placeholder="Describe tu Caso"
+                        class="w-full rounded border border-slate-300 bg-transparent px-4 py-3 focus:border-slate-500 focus:outline-none"
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="bg-[var(--color-theme)] px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
+                    >
+                        Obtener Ayuda Ahora
+                    </button>
+                </form>
+            </div>
+        </Container>
+    </div>
+
