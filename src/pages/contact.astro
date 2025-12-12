@@ -1,10 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Container from '@/components/Container.astro';
+import Hero from '@/components/Hero.astro';
+import ContactSection from '@/components/ContactSection.astro';
+import { MapPin, Phone, Mail, Clock } from '@lucide/astro';
+import MapSection from '@/components/MapSection.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const contactItems = [
+    {
+        icon: MapPin,
+        label: '123 S 4th St, Las Vegas, NV 12004.',
+        type: 'address',
+    },
+    {
+        icon: Phone,
+        label: '+1 123 456 7890',
+        type: 'phone',
+    },
+    {
+        icon: Mail,
+        label: 'mail@example.com',
+        type: 'email',
+    },
+    {
+        icon: Clock,
+        label: '8:30 AM - 5:30 PM',
+        type: 'hours',
+    },
+];
 ---
 
 <Layout title="Contact">
-    <h1>contactc</h1>
+    <Hero title="Contact Us" />
+
+    <ContactSection
+        formTitle="Review Your Case With Us"
+        formSubtitle="Consultations are free of charge"
+    >
+        <div class="space-y-6">
+            <h2
+                class="font-title text-4xl leading-tight font-medium lg:text-5xl"
+            >
+                Contact Information
+            </h2>
+            <p class="text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+
+            <div class="mt-6 space-y-4">
+                {
+                    contactItems.map((item) => {
+                        const Icon = item.icon;
+                        return (
+                            <div class="flex items-center space-x-6">
+                                <Icon class="text-theme h-6 w-6" />
+                                <span class="font-title text-2xl font-medium">
+                                    {item.label}
+                                </span>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+    </ContactSection>
+    <MapSection />
 </Layout>

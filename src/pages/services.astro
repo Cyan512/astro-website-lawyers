@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Container from '@/components/Container.astro';
 import ContactSection from '@/components/ContactSection.astro';
+import Hero from '@/components/Hero.astro';
 
 const generalServices = [
     'Asesoramiento y defensa en casos penales',
@@ -65,11 +66,7 @@ const services = [
 ---
 
 <Layout title="Servicios - Muña & Cardenas">
-    <div class="bg-black py-20 text-center text-white">
-        <Container>
-            <h1 class="font-title text-5xl font-bold lg:text-6xl">Servicios</h1>
-        </Container>
-    </div>
+    <Hero title="Servicios" />
 
     <div class="bg-slate-50 py-16 lg:py-24">
         <Container>

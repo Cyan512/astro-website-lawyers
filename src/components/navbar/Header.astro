@@ -3,6 +3,7 @@ import Container from '@/components/Container.astro';
 import Link from '@/components/ui/Link.astro';
 import DropDown from './DropDown.astro';
 import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
+import { cn } from '@/lib/tailwind-utils';
 
 const menuitems = [
     { title: 'Home', path: '/' },
@@ -29,7 +30,7 @@ const menuitems = [
 ];
 ---
 
-<header>
+<header class="fixed top-0 w-full">
     <div class="border-gray-200 lg:border-b">
         <Container>
             <div class="flex items-center justify-between">

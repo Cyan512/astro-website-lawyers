@@ -1,7 +1,8 @@
 ---
 const { class: className } = Astro.props;
+import { cn } from '@/lib/tailwind-utils';
 ---
 
-<div class:list={['max-w-content mx-auto px-4', className]}>
+<div class={cn('max-w-content mx-auto px-4', className)}>
     <slot />
 </div>
