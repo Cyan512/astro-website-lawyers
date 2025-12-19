@@ -1,7 +1,86 @@
 ---
+// Datos para los enlaces del footer
+const aboutLinks = [
+    { name: "About Us", href: "#" },
+    { name: "Attorneys", href: "#" },
+    { name: "Know Your Rights", href: "#" },
+    { name: "Community", href: "#" },
+    { name: "Contact", href: "#" },
+];
 
+const practiceAreas = [
+    { name: "Car Accidents", href: "#" },
+    { name: "Truck Accidents", href: "#" },
+    { name: "Personal Injury", href: "#" },
+    { name: "Defective Product", href: "#" },
+    { name: "Workers Compensation", href: "#" },
+];
+
+const workingHours = [
+    { day: "Mon", time: "8.30 AM - 5.30 PM" },
+    { day: "Tue", time: "8.30 AM - 5.30 PM" },
+    { day: "Wed", time: "8.30 AM - 5.30 PM" },
+    { day: "Thu", time: "8.30 AM - 5.30 PM" },
+    { day: "Fri", time: "8.30 AM - 5.30 PM" },
+];
 ---
 
-<footer class="footer">
-    <p>© {new Date().getFullYear()} Law Firm. All rights reserved.</p>
+<footer class="bg-[#0f0f0f] text-gray-400 py-16 px-4 font-serif">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+        <div class="space-y-6">
+            <div class="flex items-center gap-3">
+                <img
+                    src="/logo-website.png"
+                    alt="logo de Muña & Cardenas Abogados"
+                    class="h-14 w-auto"
+                />
+            </div>
+            <div class="space-y-2 text-sm not-italic">
+                <p>123 S 4th St, Las Vegas, NV 12004.</p>
+                <p>(01) 123 456 7890</p>
+                <p>mail@example.com</p>
+            </div>
+            <div class="flex gap-4 text-white">
+                <a href="#" class="hover:text-gray-400 transition-colors">FB</a>
+                <a href=    "#" class="hover:text-gray-400 transition-colors">TW</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">IG</a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-white text-xl font-semibold mb-6">About</h3>
+            <ul class="space-y-3 text-sm">
+                {aboutLinks.map(link => (
+                    <li><a href={link.href} class="hover:text-white transition-colors">{link.name}</a></li>
+                ))}
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-white text-xl font-semibold mb-6">Practice Areas</h3>
+            <ul class="space-y-3 text-sm">
+                {practiceAreas.map(area => (
+                    <li><a href={area.href} class="hover:text-white transition-colors">{area.name}</a></li>
+                ))}
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-white text-xl font-semibold mb-6">Working Hours</h3>
+            <ul class="space-y-3 text-sm">
+                {workingHours.map(item => (
+                    <li class="flex justify-between md:justify-start md:gap-4">
+                        <span class="text-white">{item.day}:</span>
+                        <span>{item.time}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-gray-800 mt-16 pt-8 text-center text-xs text-gray-600 uppercase tracking-widest">
+        Copyright © 2025 Mike & John
+    </div>
 </footer>
