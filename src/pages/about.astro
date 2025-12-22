@@ -8,8 +8,8 @@ import Hero from '@/components/Hero.astro';
     <Hero title="Nosotros" />
 
     <Container>
-        <div class="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
-            <div>
+        <div class="grid gap-12 py-12 lg:grid-cols-2">
+            <div class="flex items-center">
                 <h2
                     class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
                 >
@@ -17,7 +17,7 @@ import Hero from '@/components/Hero.astro';
                 </h2>
             </div>
             <div class="flex flex-col gap-6">
-                <p class="font-bolt text-lg text-slate-600">
+                <p class="text-lg font-medium text-slate-700 leading-relaxed">
                     Nuestra firma de abogados cuenta con una trayectoria de diez
                     años especializándonos en derecho penal, manejando con éxito
                     casos complejos y mediáticos. Durante esta década de
@@ -25,7 +25,7 @@ import Hero from '@/components/Hero.astro';
                     legales delicadas con dedicación, integridad y un enfoque
                     estratégico.
                 </p>
-                <p class="text-lg text-slate-600">
+                <p class="text-lg text-slate-600 leading-relaxed">
                     En nuestra firma, nos enorgullece brindar un servicio legal
                     excepcional, enfocado en la defensa agresiva de los derechos
                     de nuestros clientes y la búsqueda de resultados favorables
@@ -40,17 +40,17 @@ import Hero from '@/components/Hero.astro';
     </Container>
 
     <Container>
-        <div class="grid gap-12 py-20 lg:grid-cols-2">
+        <div class="grid gap-10 py-12 lg:grid-cols-2 items-center">
             <div class="w-full">
                 <img
                     src="https://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00668-nmnm-scaled.jpg"
                     alt="Perfil Nahuel Muña"
-                    class="h-auto w-full rounded-lg object-cover"
+                    class="w-full max-w-lg h-auto object-contain rounded-xl"
                 />
             </div>
-            <div class="flex flex-col justify-center">
-                <span class="mb-4 text-5xl text-slate-400">“</span>
-                <p class="mb-10 text-lg leading-relaxed text-slate-700">
+            <div class="flex flex-col max-w-xl">
+                <span class="mb-6 text-6xl leading-none text-slate-900 font-serif">“</span>
+                <p class="text-xl leading-relaxed text-slate-900 font-serif font-medium">
                     Hay cosas que el dinero no puede comprar como: tu libertad,
                     tu tranquilidad y tu paz familiar, creemos que todo proceso
                     se puede ganar, siempre que uses tiempo, esfuerzo y mucha
@@ -61,13 +61,13 @@ import Hero from '@/components/Hero.astro';
                     especialista en derecho penal y te invito a solucionar tus
                     problemas legales.
                 </p>
-                <div class="mt-4">
+                <div>
                     <img
                         src="https://muñacardenas-abogadopenalista.com/wp-content/uploads/2021/03/signature.png"
                         alt="Firma Nahuel Muña"
-                        class="mb-2 h-16"
+                        class="mb-3 h-14"
                     />
-                    <p class="text-lg font-semibold text-slate-700">
+                    <p class="text-base font-semibold text-slate-800 font-serif">
                         Nahuel Muña.
                     </p>
                 </div>
