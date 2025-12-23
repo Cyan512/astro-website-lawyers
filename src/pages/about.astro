@@ -8,16 +8,16 @@ import Hero from '@/components/Hero.astro';
     <Hero title="Nosotros" />
 
     <Container>
-        <div class="grid gap-12 py-12 lg:grid-cols-2">
-            <div class="flex items-center">
+        <div class="grid gap-8 py-12 lg:grid-cols-2 items-center">
+            <div>
                 <h2
-                    class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
+                    class="font-title text-2xl leading-tight font-bold text-slate-900 lg:text-4xl"
                 >
                     Muña & Cardenas (MC)- firma de abogados
                 </h2>
             </div>
             <div class="flex flex-col gap-6">
-                <p class="text-lg font-medium text-slate-700 leading-relaxed">
+                <p class="font-semibolt text-lg text-slate-900">
                     Nuestra firma de abogados cuenta con una trayectoria de diez
                     años especializándonos en derecho penal, manejando con éxito
                     casos complejos y mediáticos. Durante esta década de
@@ -40,17 +40,17 @@ import Hero from '@/components/Hero.astro';
     </Container>
 
     <Container>
-        <div class="grid gap-10 py-12 lg:grid-cols-2 items-center">
+        <div class="grid gap-12 py-10 lg:grid-cols-2 items-center">
             <div class="w-full">
                 <img
                     src="https://muñacardenas-abogadopenalista.com/wp-content/uploads/2024/07/DSC00668-nmnm-scaled.jpg"
                     alt="Perfil Nahuel Muña"
-                    class="w-full max-w-lg h-auto object-contain rounded-xl"
+                    class="w-full max-w-lg h-auto object-contain rounded-lg"
                 />
             </div>
-            <div class="flex flex-col max-w-xl">
-                <span class="mb-6 text-6xl leading-none text-slate-900 font-serif">“</span>
-                <p class="text-xl leading-relaxed text-slate-900 font-serif font-medium">
+            <div class="flex flex-col justify-center">
+                <span class="mb-6 text-7xl text-slate-400 font-serif">“</span>
+                <p class="mb-10 text-xl leading-relaxed text-slate-900 font-serif">
                     Hay cosas que el dinero no puede comprar como: tu libertad,
                     tu tranquilidad y tu paz familiar, creemos que todo proceso
                     se puede ganar, siempre que uses tiempo, esfuerzo y mucha
@@ -67,7 +67,7 @@ import Hero from '@/components/Hero.astro';
                         alt="Firma Nahuel Muña"
                         class="mb-3 h-14"
                     />
-                    <p class="text-base font-semibold text-slate-800 font-serif">
+                    <p class="text-lg font-serif text-slate-900">
                         Nahuel Muña.
                     </p>
                 </div>
@@ -79,102 +79,58 @@ import Hero from '@/components/Hero.astro';
         <h2 class="text-center text-3xl font-bold text-red-700">
             Muña & Cardenas, es tu mejor elección!…
         </h2>
-        <div class="grid gap-12 py-20 lg:grid-cols-2">
+        <div class="grid gap-12 py-12 lg:grid-cols-2">
+            <!-- TÍTULO -->
             <div>
-                <h2
-                    class="font-title text-4xl leading-tight font-bold text-slate-900 lg:text-5xl"
-                >
+                <h2 class="font-title text-4xl leading-tight font-bold text-slate-900 lg:text-5xl">
                     Nuestra misión y <br /> valores:
                 </h2>
             </div>
-            <div class="space-y-8">
-                <div>
-                    <h4 class="text-lg font-bold text-slate-900">Misión:</h4>
-                    <p class="mt-2 text-base leading-relaxed text-slate-700">
-                        Brindamos el servicio más especializado y organizado en
-                        derecho penal, nuestra misión es lograr el éxito en tu
-                        caso.
+            <!-- ACORDEONES -->
+            <div class="space-y-6">
+                <!-- ACORDEÓN MISIÓN -->
+                <details class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold text-slate-900">
+                        Misión
+                        <span class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-600 transition-all duration-300 group-open:rotate-45 group-open:border-red-700 group-open:text-red-700">+</span>
+                    </summary>
+                    
+                    <p class="mt-6 text-base leading-relaxed text-slate-700">
+                        Brindamos un servicio legal altamente especializado en derecho penal,
+                        enfocado en la defensa estratégica, ética y rigurosa de los derechos de
+                        nuestros clientes, con el objetivo de alcanzar resultados favorables y
+                        brindar tranquilidad jurídica.
                     </p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-slate-900">Valores:</h4>
-                    <ul class="mt-4 space-y-6 leading-relaxed text-slate-700">
-                        <li>
-                            <span class="font-bold">• Lealtad.</span>
-                            – Nuestro trabajo se basa en la lealtad que se muestra
-                            al estudio y a todos los clientes en la resolución de
-                            sus casos, siendo este valor de mayor importancia por
-                            trabajar con información privilegiada y delicada.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Liderazgo.</span>
-                            – Marcamos tendencia en nuestra disciplina, buscamos
-                            el cambio, la innovación y el liderazgo.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Aprendizaje.</span>
-                            – Estamos en constante capacitación y aprendizaje permanente.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Puntualidad.</span>
-                            – Cumplir con los plazos procesales, entrar a las audiencias
-                            a la hora señalada, además de ingresar a la hora exacta
-                            al trabajo.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Adaptibilidad.</span>
-                            – Nos acomodamos al entorno, como a las diferentes condiciones
-                            y necesidades de nuestros clientes.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Simplicidad.</span>
-                            – Creamos y aplicacmos procesos sencilos. Evitamos o
-                            reducimoostoda forman de complejidad, hacemos que lo
-                            complejo se convierta en sencillo.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Pasión.</span>
-                            – Amamos lo que hacemos, Perseguimos nuestras metas con
-                            determinación y entusiasmo.
-                        </li>
-                        <li>
-                            <span class="font-bold"
-                                >• Comunicación abierta.</span
-                            >
-                            – Existe una comunicación horizontal y vertical, estamos
-                            abiertos a nuevas ideas. Siempre buscamos el feedback
-                            o la retro alimentación para mejorar.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Honestidad.</span>
-                            – Trabajamos con honestidad, mostrando sinceridad e integridad
-                            a nuestros clientes y dentro del equipo de trabajo.
-                        </li>
-                        <li>
-                            <span class="font-bold"
-                                >• innovación y creatividad.</span
-                            >
-                            – Buscamos solucionar los casos con estrategias que contenga
-                            creatividad e innovación.
-                        </li>
-                        <li>
-                            <span class="font-bold">• Trabajo en equipo.</span>
-                            – Todo proceso es evaluado y llevado por un grupo humano
-                            compacto y dinámico.
-                        </li>
-                        <li>
-                            <span class="font-bold">• determinación.</span>
-                            – Estamos determinados a ganar cada caso, no nos rendimos
-                            ante las adversidades.
-                        </li>
+                </details>
+            
+                <!-- ACORDEÓN VALORES -->
+                <details class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold text-slate-900">
+                        Valores
+                        <span class="flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-600 transition-all duration-300 group-open:rotate-45 group-open:border-red-700 group-open:text-red-700">+</span>
+                    </summary>
+
+                    <ul class="mt-6 space-y-4 leading-relaxed text-slate-700">
+                        <li><strong>Lealtad:</strong> Confidencialidad y compromiso absoluto.</li>
+                        <li><strong>Liderazgo:</strong> Estrategias jurídicas innovadoras.</li>
+                        <li><strong>Aprendizaje:</strong> Capacitación constante.</li>
+                        <li><strong>Puntualidad:</strong> Respeto estricto de los plazos.</li>
+                        <li><strong>Adaptabilidad:</strong> Soluciones a medida.</li>
+                        <li><strong>Simplicidad:</strong> Lo complejo se vuelve claro.</li>
+                        <li><strong>Pasión:</strong> Vocación por la defensa penal.</li>
+                        <li><strong>Comunicación:</strong> Transparencia permanente.</li>
+                        <li><strong>Honestidad:</strong> Ética e integridad profesional.</li>
+                        <li><strong>Innovación:</strong> Creatividad jurídica.</li>
+                        <li><strong>Trabajo en equipo:</strong> Análisis colectivo.</li>
+                        <li><strong>Determinación:</strong> No rendirse nunca.</li>
                     </ul>
-                </div>
+                </details>
             </div>
         </div>
     </Container>
 
     <Container>
-        <div class="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
+        <div class="grid gap-8 py-12 lg:grid-cols-2">
             <div>
                 <h2
                     class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
