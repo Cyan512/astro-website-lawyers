@@ -6,44 +6,33 @@ import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
 import { cn } from '@/lib/tailwind-utils';
 
 const menuitems = [
-    { title: 'Home', path: '/' },
-    {
-        title: 'About Us',
-        path: '/about',
-        /*children: [
-            { title: 'Misión', path: '/' },
-            { title: 'Visión', path: '/' },
-            { title: 'Valores', path: '#' },
-            { title: 'Misión', path: '/' },
-            { title: 'Visión', path: '/' },
-            { title: 'Valores', path: '#' },
-        ],*/
-    },
-
+    { title: 'Inicio', path: '/' },
+    { title: 'Nosotros', path: '/about' },
     { title: 'Staff', path: '/staff' },
-    {
-        title: 'Services',
-        path: '/services',
-    },
-    { title: 'Results', path: '/results' },
-    { title: 'Contact', path: '/contact' },
+    { title: 'Servicios', path: '/services' },
+    { title: 'Resultados', path: '/results' },
+    { title: 'Contacto', path: '/contact' },
 ];
 ---
 
-<header class="fixed top-0 z-50 w-full bg-white">
+<header class="fixed top-0 z-50 w-full bg-white shadow-sm">
     <div class="border-gray-200 lg:border-b">
         <Container>
             <div class="flex items-center justify-between">
-                <a href="/" class="py-2">
+                <a href="/" class="py-3">
                     <img
                         src="/logo-website.png"
                         alt="logo de Muña & Cardenas Abogados"
-                        class="h-14 w-auto"
+                        class="h-14 w-auto lg:h-16"
                     />
                 </a>
                 <div class="hidden items-center gap-4 lg:flex">
-                    For FREE Consultation
-                    <Link href="#" size="md">Call: +1 123 456 7890</Link>
+                    <span class="text-sm font-medium text-slate-600">
+                        Consulta gratuita
+                    </span>
+                    <Link href="tel:+51964047119" size="md">
+                        Llama: +51 964 047 119
+                    </Link>
                 </div>
                 <div class="block lg:hidden">
                     <MenuIcon class="h-6 w-6 text-gray-800" />
@@ -53,10 +42,10 @@ const menuitems = [
     </div>
 
     <Container>
-        <div class="mt-4 w-full">
+        <div class="mt-2 w-full lg:mt-0">
             <Astronav>
                 <MenuItems class="hidden w-full justify-end lg:flex">
-                    <ul class="flex flex-col lg:flex-row lg:gap-3">
+                    <ul class="flex flex-col lg:flex-row lg:gap-1">
                         {
                             menuitems.map((item, index) => (
                                 <>
@@ -72,7 +61,7 @@ const menuitems = [
                                         <li>
                                             <a
                                                 href={item.path}
-                                                class="flex items-center py-2 text-gray-600 uppercase hover:text-gray-900 lg:px-3"
+                                                class="flex items-center py-3 text-sm font-medium uppercase tracking-wide text-slate-700 transition-colors hover:text-[var(--color-theme)] lg:px-4 lg:py-4"
                                             >
                                                 {item.title}
                                             </a>

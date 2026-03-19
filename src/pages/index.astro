@@ -5,160 +5,149 @@ import Link from '@/components/ui/Link.astro';
 import Features from '@/components/Features.astro';
 ---
 
-<Layout title="home">
+<Layout title="Inicio - Muña & Cardenas">
     <section
         class="flex min-h-screen w-full items-center justify-center overflow-hidden bg-cover text-white"
         style="background-image: url('https://xn--muacardenas-abogadopenalista-yxc.com/wp-content/uploads/2024/07/DSC00694-2-scaled.jpg');"
     >
-        <Container class="flex flex-row-reverse items-center">
+        <Container class="flex flex-col-reverse items-center py-16 lg:flex-row lg:py-0">
             <div class="w-full text-center text-white lg:w-1/2 lg:text-left">
-                <h1 class="text-7xl font-bold text-white">
+                <h1 class="font-title text-5xl font-bold text-white lg:text-7xl">
                     Abogados penalistas
                 </h1>
-                <p class="text-base font-bold text-white">
+                <p class="mt-6 text-base font-bold text-white lg:text-lg">
                     Hay cosas que el dinero no puede comprar, como tu libertad,
-                    tu tranquilidad y tu paz familiar, creemos que todo proceso
-                    se puede ganar, siempre que se use, tiempo, esfuerzo y mucha
-                    pasión, nuestra finalidad es simplificarte tu vida y por
+                    tu tranquilidad y tu paz familiar. Creemos que todo proceso
+                    se puede ganar, siempre que se invierta tiempo, esfuerzo y mucha
+                    pasión. Nuestra finalidad es simplificarte la vida y por
                     eso, contamos con los mejores abogados especializados en
                     derecho penal.
                 </p>
                 <div
                     class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start"
                 >
-                    <Link> Obtén ayuda ahora </Link>
+                    <Link href="/contact">Obtén asesoría ahora</Link>
                 </div>
-            </div>
-            <div class="flex w-full justify-center lg:w-1/2 lg:justify-end">
             </div>
         </Container>
     </section>
     <main class="mt-16 lg:mt-24">
-        <section>
+        <section class="bg-slate-50 py-16 lg:py-24">
             <Container class="text-center">
-                <h2 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">
-                    Encima
+                <h2 class="font-title text-4xl font-bold text-slate-900 lg:text-5xl">
+                    Más de
                 </h2>
-                <p class="text-lg text-slate-600">$2.000.000.000</p>
-                <h3>Cubierto. Luchado con esfuerzo. Ganado con esfuerzo.</h3>
-                <p class="mt-4 text-lg text-slate-600">
-                    Pero el diámetro del valle es un elemento y un suave algún
-                    mañana aliquet mecenas tincidunt id habitante ahora risa
-                    venenatis mattis risa mi hasta querer mauris que es.
+                <p class="mt-4 text-2xl font-bold text-red-700 lg:text-3xl">$2.000.000.000</p>
+                <h3 class="mt-6 text-xl font-semibold text-slate-900 lg:text-2xl">En casos ganados para nuestros clientes</h3>
+                <p class="mt-4 text-lg leading-relaxed text-slate-600 lg:max-w-3xl lg:mx-auto">
+                    Con más de diez años de experiencia en derecho penal, hemos logrado
+                    recuperar millones para nuestros clientes en casos de alta complejidad.
+                    Nuestro compromiso es brindar una defensa legal estratégica y efectiva.
                 </p>
             </Container>
         </section>
-        <section>
+        <section class="py-16 lg:py-24">
             <Container
-                class="grid place-items-center pt-16 pb-8 md:pt-12 md:pb-24 lg:grid-cols-2"
+                class="grid gap-12 lg:grid-cols-2 lg:items-center"
             >
-                <div class="">
+                <div class="order-2 lg:order-1">
                     <figure>
                         <img src="" alt="" />
                     </figure>
                 </div>
-                <div>
+                <div class="order-1 lg:order-2">
                     <span
                         class="text-xs font-semibold tracking-widest text-slate-500 uppercase"
                         >Sobre nosotros</span
                     >
                     <h2
-                        class="text-4xl font-bold lg:text-5xl lg:tracking-tight"
+                        class="mt-4 font-title text-3xl font-bold text-slate-900 lg:text-4xl"
                     >
-                        Abogados invictos en lesiones personales y accidentes en
-                        Nevada
+                        Defensa penal estratégica y efectiva en Cusco y todo el Perú
                     </h2>
-                    <p class="mt-4 text-lg text-slate-600">
-                        <b
-                            >En un número entero como urna, augue pretium
-                            gravida diam, placerat aliquam neque pellentesque
-                            auctor ipsum pellentesque eu eu est sit Phasellus
-                            vitae tempor nec elementum.</b
-                        >
-                        Accumsan aliquam, sed nunc amet aenean sit felis venenatis
-                        duis at orci amet praesent ut vitae nunc commodo morbi malesuada
-                        risus viverra non interdum porttitor feugiat auctor purus
-                        magna turpis ut tempus, volutpat sed malesuada ut porttitor
-                        morbi enim amet erat purus in varius eu mauris, dui sentarse.
+                    <p class="mt-6 text-lg leading-relaxed text-slate-600">
+                        Somos un estudio jurídico especializado en derecho penal con
+                        más de diez años de trayectoria defendiendo casos complejos
+                        y mediáticos. Nuestro equipo de abogados cuenta con amplia
+                        experiencia en la defensa de clientes ante situaciones legales
+                        delicadas, demostrando dedicación, integridad y un enfoque
+                        estratégicamente diseñado para cada caso.
                     </p>
-                    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
                         <Link
-                            href="#"
-                            target="_blank"
+                            href="/about"
                             class="inline-flex items-center justify-center gap-1"
-                            rel="noopener"
                         >
-                            Leer Más
+                            Conoce más sobre nosotros
                         </Link>
                     </div>
                 </div>
             </Container>
         </section>
-        <section>
+        <section class="bg-slate-50 py-16 lg:py-24">
             <Container>
                 <h2
-                    class="text-center text-4xl font-bold lg:text-5xl lg:tracking-tight"
+                    class="text-center font-title text-3xl font-bold text-slate-900 lg:text-4xl"
                 >
-                    ¿Por qué elegir a Mike & John,<br /> abogados especializados
-                    en lesiones personales y accidentes?
+                    ¿Por qué elegir a <br class="hidden lg:inline" /> Muña & Cardenas, abogados penalistas?
                 </h2>
-                <div class="mt-16 grid gap-16 sm:grid-cols-2">
+                <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:mt-16">
                     <div class="flex flex-col items-start gap-4">
-                        <div></div>
-                        <h3 class="text-lg font-semibold">
-                            Sin cargo a menos que ganes
+                        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+                            <i class="fa-solid fa-scale-balanced text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900">
+                            Sin honorarios si no ganamos
                         </h3>
-                        <p class="mt-2 leading-relaxed text-slate-500">
-                            Amet, pellentesque laoreet volutpat feugiat turpis
-                            accumsan nulla morbi ut blandit nibh famas arcu,
-                            nisi mauris, a eget massa adipiscing.
+                        <p class="mt-2 leading-relaxed text-slate-600">
+                            No cobramos si no ganamos tu caso. Trabajamos bajo 
+                            un esquema de honorarios que nos motiva a luchar 
+                            incansablemente por tu libertad.
                         </p>
                     </div>
                     <div class="flex flex-col items-start gap-4">
-                        <div></div>
-                        <h3 class="text-lg font-semibold">
-                            Recuperaciones multimillonarias
+                        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+                            <i class="fa-solid fa-gavel text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900">
+                            Más de 10 años de experiencia
                         </h3>
-                        <p class="mt-2 leading-relaxed text-slate-500">
-                            Mi almohada está vacía, no necesito fingir una
-                            sonrisa, siempre llevo un elemento hermoso en mi
-                            corazón.
+                        <p class="mt-2 leading-relaxed text-slate-600">
+                            Contamos con una década de experiencia en casos 
+                            penales de alta complejidad, incluyendo casos 
+                            mediáticos a nivel nacional.
                         </p>
                     </div>
                     <div class="flex flex-col items-start gap-4">
-                        <div></div>
-                        <h3 class="text-lg font-semibold">
+                        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+                            <i class="fa-solid fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900">
                             Miles de clientes satisfechos
                         </h3>
-                        <p class="mt-2 leading-relaxed text-slate-500">
-                            Los niños los tiñen, pero se dice que mi almohada es
-                            amante del phasellus hasta que el autor se anima,
-                            pero cada vida es una proin y no.
+                        <p class="mt-2 leading-relaxed text-slate-600">
+                            Hemos defendido con éxito a cientos de clientes 
+                            que han recuperado su libertad y tranquilidad 
+                            gracias a nuestra labor legal.
                         </p>
                     </div>
                     <div class="flex flex-col items-start gap-4">
-                        <div></div>
-                        <h3 class="text-lg font-semibold">Somos invictos</h3>
-                        <p class="mt-2 leading-relaxed text-slate-500">
-                            La vida se corta antes de que el hambre del ratón
-                            del valle sea triste, el gran lobortis para el
-                            pellentesco.
+                        <div class="flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-white">
+                            <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900">
+                            Compromiso absoluto con tu defensa
+                        </h3>
+                        <p class="mt-2 leading-relaxed text-slate-600">
+                            Nos dedicamos exclusivamente al derecho penal, 
+                            lo que nos permite ofrecer una defensa especializada 
+                            y efectiva en cada caso.
                         </p>
                     </div>
                 </div>
             </Container>
         </section>
-        <section>
-            <Container class="text-center">
-                <span
-                    class="text-xs font-semibold tracking-widest text-slate-500 uppercase"
-                    >Mike & John, abogados especializados en lesiones
-                    personales, reconocidos por</span
-                >
-                <div></div>
-            </Container>
-        </section>
-        <section>
+        <section class="py-16 lg:py-24">
             <Container>
                 <Features />
             </Container>

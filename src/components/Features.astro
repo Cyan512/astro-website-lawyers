@@ -1,64 +1,70 @@
 ---
 const features = [
     {
-        title: 'Car Accidents',
+        title: 'Lavado de activos',
         description:
-            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
-        url: '#',
+            'Defensa estratégica en casos de lavado de activos con resultados exitosos para nuestros clientes.',
+        url: '/services',
     },
     {
-        title: 'Truck Accidents',
+        title: 'Delitos contra la administración pública',
         description:
-            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
-        url: '#',
+            'Representación legal en casos de corrupción y delitos cometidos por funcionarios públicos.',
+        url: '/services',
     },
     {
-        title: 'Personal Injury',
+        title: 'Delitos contra la vida',
         description:
-            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
-        url: '#',
+            'Defensa efectiva en casos de feminicidio, homicide y lesiones personales.',
+        url: '/services',
     },
     {
-        title: 'Defective Products',
+        title: 'Delitos patrimoniales',
         description:
-            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
-        url: '#',
+            'Experiencia en casos de robo, hurto, estafa y otros delitos contra el patrimonio.',
+        url: '/services',
     },
     {
-        title: 'Workers Compensation',
+        title: 'Delitos informáticos',
         description:
-            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
-        url: '#',
+            'Defensa en casos de ciberdelitos, fraude electrónico y delitos informaticos.',
+        url: '/services',
     },
     {
-        title: 'Dog Bites',
+        title: 'Delitos económicos',
         description:
-            'Tincidunt mauris, nulla elementum quis posuere orci, urna in consequat aliquet nunc.',
-        url: '#',
+            'Representación en casos de delitos financieros, cuello blanco y delitos económicos.',
+        url: '/services',
     },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">
-        Our Areas of Practice
+    <h2 class="text-center font-title text-3xl font-bold text-slate-900 lg:text-4xl">
+        Áreas de práctica
     </h2>
-    <p class="mt-4 text-lg text-slate-600">
-        In pellentesque ipsum, in arcu, sed amet augue ultricies pellentesque
-        netus eu sed pharetra accumsan habitant egestas purus, at fermentum.
+    <p class="mt-4 text-center text-lg leading-relaxed text-slate-600 lg:max-w-2xl lg:mx-auto">
+        Somos especialistas en derecho penal. Brindamos defensa legal en
+        casos de alta complejidad ante los tribunales del Perú.
     </p>
 </div>
 
-<div class="mt-16 grid gap-16 sm:grid-cols-2 md:grid-cols-3">
+<div class="mt-16 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
     {
         features.map((item) => (
-            <div class="flex items-start gap-4">
+            <div class="flex flex-col items-start gap-4 rounded-lg bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-red-700 text-white">
+                    <i class="fa-solid fa-gavel text-xl"></i>
+                </div>
                 <div>
-                    <h3 class="text-lg font-semibold">{item.title}</h3>{' '}
-                    <p class="mt-2 leading-relaxed text-slate-500">
+                    <h3 class="text-lg font-semibold text-slate-900">{item.title}</h3>
+                    <p class="mt-2 text-base leading-relaxed text-slate-600">
                         {item.description}
                     </p>
-                    <a href={item.url}>Learn More</a>
+                    <a href={item.url} class="mt-3 inline-flex items-center text-sm font-medium text-red-700 hover:text-red-800">
+                        Conoce más
+                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
                 </div>
             </div>
         ))

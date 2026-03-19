@@ -9,29 +9,29 @@ interface Props {
 const { formTitle, formSubtitle } = Astro.props;
 ---
 
-<div class="bg-[#f3f4f6] py-24">
+<div class="bg-[#f3f4f6] py-16 lg:py-24">
     <Container>
-        <div class="grid items-start gap-16 lg:grid-cols-2">
+        <div class="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
                 <slot>
                     <h2
-                        class="font-title text-4xl leading-tight font-bold lg:text-5xl"
+                        class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
                     >
-                        ¿Listo para obtener respuestas de un abogado calificado?
+                        ¿Necesitas un abogado penalista?
                     </h2>
-                    <p class="mt-6 text-lg text-slate-600">
-                        Si usted o un ser querido necesita asesoría legal, no
-                        dude en contactarnos. Estamos aquí para escuchar su caso
-                        y brindarle la mejor estrategia legal.
+                    <p class="mt-6 text-lg leading-relaxed text-slate-600">
+                        Si tú o un ser querido enfrenta un proceso penal, no dudes
+                        en contactarnos. Estamos aquí para escuchar su caso y
+                        brindarle la mejor estrategia de defensa legal.
                     </p>
 
                     <div class="mt-12">
                         <p
                             class="text-sm font-bold tracking-wide text-slate-900 uppercase"
                         >
-                            Consulta GRATUITA
+                            Consulta gratuita
                         </p>
-                        <p class="font-title mt-2 text-4xl font-bold">
+                        <p class="font-title mt-2 text-3xl font-bold lg:text-4xl">
                             Llama al: +51 964 047 119
                         </p>
                     </div>
@@ -78,9 +78,9 @@ const { formTitle, formSubtitle } = Astro.props;
 
                     <button
                         type="submit"
-                        class="bg-[var(--color-theme)] px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
+                        class="bg-[var(--color-theme)] w-full px-8 py-4 font-bold tracking-wider text-white uppercase transition-colors hover:bg-red-800"
                     >
-                        Obtener Ayuda Ahora
+                        Solicitar asesoría ahora
                     </button>
                 </form>
             </div>

@@ -1,27 +1,26 @@
 ---
-// Datos para los enlaces del footer
 const aboutLinks = [
-    { name: 'About Us', href: '#' },
-    { name: 'Attorneys', href: '#' },
-    { name: 'Know Your Rights', href: '#' },
-    { name: 'Community', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Nosotros', href: '/about' },
+    { name: 'Staff', href: '/staff' },
+    { name: 'Servicios', href: '/services' },
+    { name: 'Resultados', href: '/results' },
+    { name: 'Contacto', href: '/contact' },
 ];
 
 const practiceAreas = [
-    { name: 'Car Accidents', href: '#' },
-    { name: 'Truck Accidents', href: '#' },
-    { name: 'Personal Injury', href: '#' },
-    { name: 'Defective Product', href: '#' },
-    { name: 'Workers Compensation', href: '#' },
+    { name: 'Lavado de activos', href: '/services' },
+    { name: 'Delitos contra la administración pública', href: '/services' },
+    { name: 'Delitos contra la vida', href: '/services' },
+    { name: 'Delitos patrimoniales', href: '/services' },
+    { name: 'Delitos informáticos', href: '/services' },
 ];
 
 const workingHours = [
-    { day: 'Mon', time: '8.30 AM - 5.30 PM' },
-    { day: 'Tue', time: '8.30 AM - 5.30 PM' },
-    { day: 'Wed', time: '8.30 AM - 5.30 PM' },
-    { day: 'Thu', time: '8.30 AM - 5.30 PM' },
-    { day: 'Fri', time: '8.30 AM - 5.30 PM' },
+    { day: 'Lun', time: '8:30 AM - 5:30 PM' },
+    { day: 'Mar', time: '8:30 AM - 5:30 PM' },
+    { day: 'Mié', time: '8:30 AM - 5:30 PM' },
+    { day: 'Jue', time: '8:30 AM - 5:30 PM' },
+    { day: 'Vie', time: '8:30 AM - 5:30 PM' },
 ];
 ---
 
@@ -38,9 +37,9 @@ const workingHours = [
                 />
             </div>
             <div class="space-y-2 text-sm not-italic">
-                <p>123 S 4th St, Las Vegas, NV 12004.</p>
-                <p>(01) 123 456 7890</p>
-                <p>mail@example.com</p>
+                <p>Urb. Surihuaylla Grande Q-10, Los Nogales, San Sebastián – Cusco</p>
+                <p>+51 964 047 119</p>
+                <p>contacto@munaycardenas.com</p>
             </div>
             <div class="flex gap-4 text-white">
                 <a href="#" class="transition-colors hover:text-gray-400">FB</a>
@@ -50,7 +49,7 @@ const workingHours = [
         </div>
 
         <div>
-            <h3 class="mb-6 text-xl font-semibold text-white">About</h3>
+            <h3 class="mb-6 text-xl font-semibold text-white">Nosotros</h3>
             <ul class="space-y-3 text-sm">
                 {
                     aboutLinks.map((link) => (
@@ -69,7 +68,7 @@ const workingHours = [
 
         <div>
             <h3 class="mb-6 text-xl font-semibold text-white">
-                Practice Areas
+                Áreas de práctica
             </h3>
             <ul class="space-y-3 text-sm">
                 {
@@ -88,7 +87,7 @@ const workingHours = [
         </div>
 
         <div>
-            <h3 class="mb-6 text-xl font-semibold text-white">Working Hours</h3>
+            <h3 class="mb-6 text-xl font-semibold text-white">Horario de atención</h3>
             <ul class="space-y-3 text-sm">
                 {
                     workingHours.map((item) => (
@@ -105,6 +104,6 @@ const workingHours = [
     <div
         class="mx-auto mt-16 max-w-7xl border-t border-gray-800 pt-8 text-center text-xs tracking-widest text-gray-600 uppercase"
     >
-        Copyright © 2025 Mike & John
+        Copyright © 2025 Muña & Cardenas - Abogados Penalistas
     </div>
 </footer>

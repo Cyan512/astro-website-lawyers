@@ -8,17 +8,17 @@ import MapSection from '@/components/MapSection.astro';
 const contactItems = [
     {
         icon: MapPin,
-        label: 'Urb. Surihuaylla Grande Q-10, los Nogales, San Sebastian – Cusco.',
+        label: 'Urb. Surihuaylla Grande Q-10, Los Nogales, San Sebastián – Cusco',
         type: 'address',
     },
     {
         icon: Phone,
-        label: '+1 123 456 7890',
+        label: '+51 964 047 119',
         type: 'phone',
     },
     {
         icon: Mail,
-        label: 'mail@example.com',
+        label: 'contacto@munaycardenas.com',
         type: 'email',
     },
     {
@@ -29,22 +29,22 @@ const contactItems = [
 ];
 ---
 
-<Layout title="Contact">
-    <Hero title="Contact Us" />
+<Layout title="Contacto - Muña & Cardenas">
+    <Hero title="Contacto" />
 
     <ContactSection
-        formTitle="Review Your Case With Us"
-        formSubtitle="Consultations are free of charge"
+        formTitle="Evalúa tu caso con nosotros"
+        formSubtitle="Las consultas son gratuitas"
     >
         <div class="space-y-6">
             <h2
-                class="font-title text-4xl leading-tight font-medium lg:text-5xl"
+                class="font-title text-3xl leading-tight font-bold text-slate-900 lg:text-4xl"
             >
-                Contact Information
+                Información de contacto
             </h2>
-            <p class="text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            <p class="text-base leading-relaxed text-slate-600">
+                Estamos aquí para ayudarte. Contáctanos para una asesoría legal
+                gratuita y descubre cómo podemos defender tus derechos.
             </p>
 
             <div class="mt-6 space-y-4">
@@ -52,9 +52,9 @@ const contactItems = [
                     contactItems.map((item) => {
                         const Icon = item.icon;
                         return (
-                            <div class="flex items-center space-x-6">
-                                <Icon class="text-theme h-6 w-6" />
-                                <span class="font-title text-2xl font-medium">
+                            <div class="flex items-center space-x-4">
+                                <Icon class="text-theme h-6 w-6 shrink-0" />
+                                <span class="text-lg text-slate-700">
                                     {item.label}
                                 </span>
                             </div>
